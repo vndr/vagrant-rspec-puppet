@@ -73,3 +73,7 @@ class git(
   class { 'git::package': }
 
 }
+
+class git::init {
+  include git::package
+}

@@ -24,6 +24,11 @@
 #
 class git::package {
 
+  package { 'git-core':
+	ensure => latest
+  }
+
+
   #### Package management
 
   # set params: in operation
